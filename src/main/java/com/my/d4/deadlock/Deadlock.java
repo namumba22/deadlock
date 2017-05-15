@@ -7,10 +7,8 @@ import java.util.concurrent.Callable;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 import java.util.concurrent.TimeUnit;
-import java.util.concurrent.locks.Lock;
-import java.util.concurrent.locks.ReentrantLock;
 
-public class Deadlock {
+public class Deadlock{
 
     public static void main(String... s) throws InterruptedException {
 
@@ -39,8 +37,6 @@ public class Deadlock {
                         throw new IllegalStateException(e);
                     }
                 });
-
-
 
         executor.shutdown();
     }
